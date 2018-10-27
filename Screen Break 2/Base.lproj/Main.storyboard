@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Screen_Break_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="BJX-t8-QdV">
+                                <rect key="frame" x="0.0" y="25" width="375" height="637"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Minutes between Breaks" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1WR-1Q-jsY" customClass="CountdownLabel" customModule="Screen_Break_2" customModuleProvider="target">
+                                        <rect key="frame" x="51" y="0.0" width="273.5" height="126.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="countDownTimer" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="qkn-TZ-1el" customClass="MinutePicker" customModule="Screen_Break_2" customModuleProvider="target">
+                                        <rect key="frame" x="27.5" y="127.5" width="320" height="126.5"/>
+                                        <date key="date" timeIntervalSinceReferenceDate="551221119.02669203">
+                                            <!--2018-06-20 20:58:39 +0000-->
+                                        </date>
+                                    </datePicker>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFn-Jm-BB3" customClass="MinutesLabel" customModule="Screen_Break_2" customModuleProvider="target">
+                                        <rect key="frame" x="112.5" y="254.5" width="150.5" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Seconds in Break" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXK-Oa-BtN" customClass="SecondsLabel" customModule="Screen_Break_2" customModuleProvider="target">
+                                        <rect key="frame" x="78.5" y="255" width="218.5" height="127"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <pickerView contentMode="scaleToFill" semanticContentAttribute="spatial" translatesAutoresizingMaskIntoConstraints="NO" id="Up4-qm-o5h" customClass="SecondPicker" customModule="Screen_Break_2" customModuleProvider="target">
+                                        <rect key="frame" x="27.5" y="383" width="320" height="126.5"/>
+                                    </pickerView>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTQ-gb-BDc" customClass="SecondsLabel" customModule="Screen_Break_2" customModuleProvider="target">
+                                        <rect key="frame" x="112.5" y="510" width="150.5" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="jca-fu-PU1">
+                                        <rect key="frame" x="145" y="510.5" width="85" height="126.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4k-TB-JMP">
+                                                <rect key="frame" x="0.0" y="0.0" width="85" height="126.5"/>
+                                                <state key="normal" title="Start Timers"/>
+                                                <connections>
+                                                    <action selector="startCancelPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XBb-ic-jN7"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urk-A9-ppw">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="126.5"/>
+                                                <state key="normal" title="Pause Timers"/>
+                                                <connections>
+                                                    <action selector="pauseResumePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lle-2G-iLg"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BJX-t8-QdV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="6pO-JO-g0p"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BJX-t8-QdV" secondAttribute="trailing" id="BQN-rP-sSw"/>
+                            <constraint firstItem="BJX-t8-QdV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GRE-bh-Wo6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BJX-t8-QdV" secondAttribute="bottom" constant="5" id="ud7-9r-iTF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="minuteDescription" destination="1WR-1Q-jsY" id="0gd-IW-0xv"/>
+                        <outlet property="minutePicker" destination="qkn-TZ-1el" id="lmS-gY-xvz"/>
+                        <outlet property="minutesLabel" destination="SFn-Jm-BB3" id="AHl-19-2t2"/>
+                        <outlet property="pauseResumeTimers" destination="urk-A9-ppw" id="oFc-pq-u95"/>
+                        <outlet property="secondPicker" destination="Up4-qm-o5h" id="9gR-qn-nxL"/>
+                        <outlet property="secondsDescription" destination="DXK-Oa-BtN" id="ZJt-Nd-BTl"/>
+                        <outlet property="secondsLabel" destination="eTQ-gb-BDc" id="a4R-Kv-o67"/>
+                        <outlet property="startCancelButton" destination="D4k-TB-JMP" id="AUF-g0-dQE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
